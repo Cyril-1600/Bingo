@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>bingo</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+</head>
+<body>
+<h1 align="center">Let's play bingo</h1>
+<div id="box" th:object="${bingoService}" th:method="post">
+    <input id="box1" th:field="*{bingoView[0][0]}"></input>
+    <input id="box2" th:field="*{bingoView[0][1]}"></input>
+    <input id="box3" th:field="*{bingoView[0][2]}"></input>
+    <input id="box4" th:field="*{bingoView[1][0]}"></input>
+    <input id="box5" th:field="*{bingoView[1][1]}"></input>
+    <input id="box6" th:field="*{bingoView[1][2]}"></input>
+    <input id="box7" th:field="*{bingoView[2][0]}"></input>
+    <input id="box8" th:field="*{bingoView[2][1]}"></input>
+    <input id="box9" th:field="*{bingoView[2][2]}"></input>
+</div>
+</body>
+</html>
